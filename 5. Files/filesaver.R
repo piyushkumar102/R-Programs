@@ -1,0 +1,8 @@
+m <- matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3)
+write(m, file = 'C:/Users/piyus/PycharmProjects/R Programs/Files/en_BDU R 101 Module 4 video 3.txt', ncolumns = 3, sep = " ")
+write.csv(m, file = 'C:/Users/piyus/PycharmProjects/R Programs/Files/en_BDU R 101 Module 4 video 4.csv', row.names = FALSE)
+write.table(m, file = "C:/Users/piyus/PycharmProjects/R Programs/Files/en_BDU R 101 Module 4 video 2.csv", row.names = FALSE, col.names = FALSE, sep = ',')
+install.packages('xlsx')
+library('xlsx')
+write.xlsx(m, file = 'C:/Users/piyus/PycharmProjects/R Programs/Files/en_BDU R 101 Module 4 video 4.xlsx', row.names = FALSE, sheetName = 'Sheet1', col.names = TRUE)
+save(list = 'm', file = 'vars.RData')

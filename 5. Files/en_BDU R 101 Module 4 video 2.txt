@@ -1,0 +1,37 @@
+Hello, and welcome.
+In this video, we're going to show you how to read in a text file using the R programming
+language.
+We'll also introduce several functions that provide useful information about the file.
+In order to demonstrate how to read these files, we're going to work with an example,
+which has the file path shown here.
+You can also take a quick look at the file's contents.
+Our example file contains three lines of text from Wikipedia's page on the 1995 movie "Toy
+Story".
+One function that we can use to read the file is "readLines".
+Notice that the argument to the "readLines" function is the file path from before.
+The "text" variable receives a character vector, containing one item for each of the lines
+in the file.
+Keep in mind that a "line" is not the same thing as a sentence.
+Instead, lines are broken up by individual line breaks, which essentially form new paragraphs.
+Let's now take a look at a few functions we can apply to gain information about the file.
+In order to count the number of lines in the dataset, we can pass our "text" variable to
+the "length" function.
+The "length" function will simply count up the number of elements in the vector, which
+in this case, is 3.
+The "nchar" function will count up the number of characters in each line of our character
+vector.
+You can see the result of that function here.
+Each value includes letters and numbers, as well as symbols.
+If you'd like to know the size of your file, you can pass the file path to the "file.size"
+function.
+The output here is listed in bytes, which tells us that our example file has a size
+of 586 bytes.
+If you'd like to read a text file by word, rather than by line, you can use the "scan"
+function while following the syntax you see here.
+Again, the first argument is simply a file path.
+And the second argument is just an empty string, but it is needed for our purposes.
+If you look at the output, you'll see the "scan" function produces a vector with each
+individual word as an element.
+By now, you should understand the functions that allow you to work with text files in
+the R programming language.
+Thank you for watching this video.

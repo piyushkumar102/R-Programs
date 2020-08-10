@@ -1,0 +1,5 @@
+datatext <- readLines("C:/Users/piyus/PycharmProjects/R Programs/Files/en_BDU R 101 Module 4 video 2.txt")
+length(datatext)
+nchar(datatext)
+file.size("C:/Users/piyus/PycharmProjects/R Programs/Files/en_BDU R 101 Module 4 video 2.txt")
+texts <- scan("C:/Users/piyus/PycharmProjects/R Programs/Files/en_BDU R 101 Module 4 video 2.txt", " ")
