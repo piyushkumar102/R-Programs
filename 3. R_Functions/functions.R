@@ -2,14 +2,12 @@ printer <- function()
   {
   print("Hello")
 }
-
 printer()
 
 adder <- function(x, y)
   {
   x + y
 }
-
 adder(5, 6)
 
 adder <- function(x, y) #Parameters
@@ -27,7 +25,6 @@ adder <- function(x, y = 2) #Keyword Arg
   {
   return(x + y)
 }
-
 adder(x)
 
 
