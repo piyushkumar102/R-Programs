@@ -1,23 +1,23 @@
 mergesort <- function(m)
-  {
+{
 
   merge_ <- function(left, right)
-    {
+  {
     # Create a list to hold the results
     result <- c()
     # This is our stop condition. While left and right contain
     # a value, compare them
     while (length(left) > 0 && length(right) > 0)
-      {
+    {
       # If left is less than or equal to right,
       # add it to the result list
       if (left[1] <= right[1])
-        {
+      {
         result <- c(result, left[1])
         # Remove the value from the list
         left <- left[-1]
       } else
-        {
+      {
         # When right is less than or equal to left,
         # add it to the result.
         result <- c(result, right[1])
@@ -36,7 +36,7 @@ mergesort <- function(m)
   # When the length of the vector is 1, just return the integer.
   len <- length(m)
   if (len <= 1) m else
-    {
+  {
     # Otherwise keep dividing the vector into two halves.
     middle <- length(m) / 2
     # Add every integer from 1 to the middle to the left
@@ -47,10 +47,10 @@ mergesort <- function(m)
     right <- mergesort(right)
     # Order and combine the results.
     if (left[length(left)] <= right[1])
-      {
+    {
       c(left, right)
     } else
-      {
+    {
       merge_(left, right)
     }
   }

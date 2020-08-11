@@ -8,6 +8,7 @@ result.mean <- mean(x)
 print(result.mean)
 result.mean <- mean(x, na.rm = TRUE) # Find mean dropping NA values.
 print(result.mean)
+
 median.result <- median(x)
 print(median.result)
 

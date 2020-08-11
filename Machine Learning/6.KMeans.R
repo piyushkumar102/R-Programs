@@ -9,7 +9,7 @@ head(iris.new)
 head(iris.class)
 
 normalize <- function(x)
-  {
+{
   return((x - min(x)) / (max(x) - min(x)))
 }
 

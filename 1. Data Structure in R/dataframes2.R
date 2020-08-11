@@ -20,7 +20,7 @@ emp_1
 
 emp_1$employee_stat <- c("FT", "PT", "PT", "FT", "FT", "PT", "PT", "FT")
 
-emp_1[1:5, 2:4]
+emp_1[1:5, 2:4] #Row,Column
 emp_new <- emp_1[3:5, 1:2]
 emp_new$emp_id <- c(1, 2, 3)
 
@@ -32,7 +32,7 @@ dtab <- table(d)
 dtab
 
 tabdom <- function(tbl, k)
-  {
+{
   dtabf <- as.data.frame(dtab)
   freqord <- order(dtabf$Freq, decreasing = TRUE)
   dom <- dtabf[freqord,][1:k,]

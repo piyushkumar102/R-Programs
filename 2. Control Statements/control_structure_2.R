@@ -15,21 +15,21 @@ print(list)
 list1 <- list(Sold = c('Cheese', 'Lacto', 'Choco', 'Corn'),
               Money = c(10, 12, 15), purchase = FALSE)
 for (i in list1)
-  {
+{
   print(i)
 }
 
 list1 <- list(Sold = c('Cheese', 'Lacto', 'Choco', 'Corn'),
               Money = c(10, 12, 15), purchase = FALSE)
 for (i in list1[[1]])
-  {
+{
   print(i)
 }
 
 list1 <- list(Sold = c('Cheese', 'Lacto', 'Choco', 'Corn'),
               Money = c(10, 12, 15), purchase = FALSE)
 for (i in list1[[2]])
-  {
+{
   print(i)
 }
 

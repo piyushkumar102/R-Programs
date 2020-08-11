@@ -1,4 +1,4 @@
-#install.packages('readxl')
+install.packages('readxl')
 library(readxl)
 data <- read.csv("C:/Users/piyus/PycharmProjects/R Programs/Files/brics.csv")
 data[1]
