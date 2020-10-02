@@ -14,14 +14,15 @@ print(ifelse(a %% 2 == 0, "even", "odd"))
 v <- LETTERS[1:4]
 for (i in v)
 { print(i) }
+
 v <- c("Wynk", "Spotify")
 cnt <- 3
 while (cnt < 7)
 {
   print(v)
   cnt <- cnt + 3
-
 }
+
 v <- c("IPL", "2020")
 count <- 2
 repeat { print(v)
@@ -39,7 +40,6 @@ x <- c("Ab", "Rey", "Veer")
 if ("GOT" %in% x)
 {
   print("GOT")
-
 }else if ("Rey" %in% x) {
   print("Rey") } else {
   print("No Match") }
@@ -51,11 +51,11 @@ if ("Brain" %in% x) {
 x <- 25L
 if (is.integer(x))
 { print("X is an Integer") }
+
 x <- 1
 repeat { print(x)
   x <- x + 2
   if (x == 3) { break }
-
 }
 
 x <- 1
@@ -63,25 +63,26 @@ repeat
 { print(x)
   x <- x + 1
   if (x == 5) { break }
-
 }
+
 x <- 1:15
 for (val in x)
 {
   if (val == 5)
   { next }
   print(val) }
+
 x <- 1:15
 for (val in x)
 { if (val == 5)
 { break }
   print(val) }
+
 i <- 3
 while (i < 7)
 {
   print(i)
   i <- i + 1
-
 }
 
 x <- c(22, 25, 33, 19, 18, 11, 5)

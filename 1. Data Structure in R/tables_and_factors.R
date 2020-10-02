@@ -1,3 +1,17 @@
+d <- c(5, 12, 13, 4, 3, 28, 12, 12, 9, 5, 5, 13, 5, 4, 12)
+dtab <- table(d)
+dtab
+
+tabdom <- function(tbl, k)
+{
+  dtabf <- as.data.frame(dtab)
+  freqord <- order(dtabf$Freq, decreasing = TRUE)
+  dom <- dtabf[freqord,][1:k,]
+  return(dom)
+}
+
+tabdom(dtab, 3)
+
 gender <- factor(c("male", "female", "female", "male"))
 levels(gender)
 

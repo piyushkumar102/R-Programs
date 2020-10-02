@@ -27,16 +27,3 @@ emp_new$emp_id <- c(1, 2, 3)
 table1 <- table(emp_db$empdb_id, emp_db$empdb_name) #Categorical Classification
 table1
 
-d <- c(5, 12, 13, 4, 3, 28, 12, 12, 9, 5, 5, 13, 5, 4, 12)
-dtab <- table(d)
-dtab
-
-tabdom <- function(tbl, k)
-{
-  dtabf <- as.data.frame(dtab)
-  freqord <- order(dtabf$Freq, decreasing = TRUE)
-  dom <- dtabf[freqord,][1:k,]
-  return(dom)
-}
-
-tabdom(dtab, 3)

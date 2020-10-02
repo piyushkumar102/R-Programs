@@ -18,16 +18,6 @@ for (i in 1:length(employ_data$salary)) {
     emp <- append(emp, 'low')
   }
 }
-
-emp <- c()
-for (i in 1:length(employ_data$salary)) {
-  if (employ_data$salary[i] >= 50000) {
-    emp <- append(emp, 'high')
-  }
-  else {
-    emp <- append(emp, 'low')
-  }
-}
 emp
 
 temp <- c(55, 56, 54, 53, 52, 58, 58, 45)
@@ -45,15 +35,5 @@ for (i in 1:length(df$humid)) {
     ctr <- append(ctr, 'clear')
   }
 }
-ctr
 
-ctr <- c()
-for (i in 1:length(df$humid)) {
-  if (df$temp[i] <= 52 && df$humid[i] >= 22) {
-    ctr <- append(ctr, 'sunny')
-  }
-  else {
-    ctr <- append(ctr, 'clear')
-  }
-}
 ctr

@@ -11,7 +11,7 @@ df
 df$z
 df$z[5]
 df$x3
-max(df$x4)
+max(df$X4)
 summary(df$x)
 subset(df, X3 > 3)
 subset(df, X3 > 3, select = c(-3, -4, -5))

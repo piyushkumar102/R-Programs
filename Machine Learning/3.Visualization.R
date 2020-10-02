@@ -39,7 +39,6 @@ barplot(cars$mpg, main = "Distribution of Car Cylinder Counts and Gears", xlab =
 dev.off()
 
 #Pie Chart
-
 x <- c(21, 62, 10, 53)
 labels <- c("London", "New York", "Singapore", "Mumbai")
 piepercent <- round(100 * x / sum(x), 1)
@@ -48,13 +47,13 @@ pie(x, labels = piepercent, main = "City pie chart", col = rainbow(length(x)))
 legend("topright", c("London", "New York", "Singapore", "Mumbai"), cex = 0.8,
        fill = rainbow(length(x)))
 dev.off()
-#Box Plot
 
+#Box Plot
 png(file = "boxplot.png") # Plot the chart.
 boxplot(mpg ~ cyl, data = mtcars, xlab = "Number of Cylinders", ylab = "Miles Per Gallon", main = "Mileage Data")
 dev.off()
-#Histogram
 
+#Histogram
 v <- c(9, 13, 21, 8, 36, 22, 12, 41, 31, 33, 19)
 png(file = "histogram_lim_breaks.png")
 hist(v, xlab = "Weight", col = "green", border = "red", xlim = c(0, 40), ylim = c(0, 5), breaks = 5)

@@ -8,7 +8,6 @@ tail(movie_lists)
 movie_lists['Length'] <- c(81, 125, 7, 100, 87, 193, 130, 119, 120) #Add Column
 movie_lists <- rbind(movie_lists, c(name = 'Dr Strange', year = 2016, Length = 94)) #Add Row
 movie_lists
-rbin
 movie_lists <- movie_lists[-10,] #Delete Row
 movie_lists["Length"] <- NULL #Delete Column
 movie_lists
