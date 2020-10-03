@@ -1,8 +1,3 @@
-# Title     : TODO
-# Objective : TODO
-# Created by: piyus
-# Created on: 03-10-2020
-
 install.packages("WDI")
 require(WDI)
 #domestic gross product
@@ -44,15 +39,14 @@ attClose <- att$T.Close
 class(attClose)
 head(attClose)
 library(rugarch)
-attSpecugarchspec(variance.model = list(model = "sGARCH", garchOrder = c(1, 1), mean.model = list(armaOrder = c(1, 1)), distribution.model = "std")
-                  attGarch <- ugarchfit(spec = attSpec, data = attClose)
-                  attGarch
-                  attLog <- diff(log(attClose))[-1]
-                  # build the specification
-                  attLogSpec <- ugarchspec(variance.model = list(model = "sGARCH",
-                                                                 garchOrder = c(1, 1)),
-                                           mean.model = list(armaOrder = c(1, 1)),
-                                           distribution.model = "std")
-                  # fit the model
-                  attLogGarch <- ugarchfit(spec = attLogSpec, data = attLog)
-                  infocriteria(attLogGarch)
+attSpec <- ugarchspec(variance.model = list(model = "sGARCH", garchOrder = c(1, 1), mean.model = list(armaOrder = c(1, 1)), distribution.model = "std"))
+attGarch <- ugarchfit(spec = attSpec, data = attClose)
+attGarch
+attLog <- diff(log(attClose))[-1]
+# build the specification
+attLogSpec <- ugarchspec(variance.model = list(model = "sGARCH",
+                                               garchOrder = c(1, 1)),
+                         mean.model = list(armaOrder = c(1, 1)),
+                         distribution.model = "std")
+# fit the model
+attLogGarch <- ugarchfit(spec = attLogSpec, data = attLog)
