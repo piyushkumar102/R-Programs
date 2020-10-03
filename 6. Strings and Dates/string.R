@@ -9,7 +9,8 @@ words <- unlist(char) #Vector
 sorted <- sort(words)
 concat <- paste(sorted, collapse = " ") #Vector to String
 subconcat <- substr(datatext[1], start = 1, stop = 2)
-trimws(subconcat)
+trimws(subconcat) #Trim White Space
 library(stringr)
 str_sub(datatext[1], -8, -1)
+
 
